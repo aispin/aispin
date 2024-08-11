@@ -45,7 +45,7 @@
 </td>
 <td valign="top" width="50%">
 
-<h3>📦 <a href="https://weekly.tw93.fun" target="_blank">Recent Projects</a></h3>
+<h3>📦 <a href="https://huangyongyou.cn/projects" target="_blank">Recent Projects</a></h3>
 
 <!-- recent_projects starts -->
 * <a href='https://docs.qq.com/doc/DQmlrQXRNdXhGdXZk' target='_blank'>Metro CoPilot</a> - 2024-03-01
