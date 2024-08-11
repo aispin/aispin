@@ -30,6 +30,8 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |-
+        echo "GH_TOKEN starts with: ${GH_TOKEN:0:4}"
+        echo "GH_TOKEN ends with: ${GH_TOKEN: -4}"
         python build_readme.py
         cat README.md
     - name: Commit and push if changed
