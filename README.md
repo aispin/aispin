@@ -24,11 +24,7 @@
 <h3>🌲 <a href="https://github.com/mamboer/mamboer/blob/master/releases.md" target="_blank">Product Releases</a></h3>
 
 <!-- recent_releases starts -->
-* <a href='https://github.com/mamboer/waka-charts/releases/tag/v1.0.0' target='_blank'>waka-charts </a> - 2024-08-11
-* <a href='https://github.com/mamboer/hexo-filter-cleanup/releases/tag/v1.2.2' target='_blank'>hexo-filter-cleanup v1.2.2</a> - 2019-05-08
-* <a href='https://github.com/mamboer/koa-luscax/releases/tag/v1.0.0' target='_blank'>koa-luscax Ready for the latest koa 2.x</a> - 2019-04-20
-* <a href='https://github.com/mamboer/fs/releases/tag/v1.2.0' target='_blank'>fs v1.2.0</a> - 2019-04-12
-* <a href='https://github.com/mamboer/hexo-renderer-scss/releases/tag/v1.2.0' target='_blank'>hexo-renderer-scss v1.2.0</a> - 2018-03-21
+
 <!-- recent_releases ends -->
 
 </td>
