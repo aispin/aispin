@@ -55,11 +55,7 @@
 <h3>📖 <a href="https://huangyongyou.cn/articles" target="_blank">Recent Articles</a></h3>
 
 <!-- recent_articles starts -->
-* <a href='https://huangyongyou.cn/en/articles/management/leadership-principles' target='_blank'>Leadership Principles of Amazon and Meituan</a> - 2024-03-06
-* <a href='https://huangyongyou.cn/en/articles/cicd/semantic-release-with-github-workflow' target='_blank'>Automating Releases with Semantic-Release and GitHub Actions</a> - 2024-08-11
-* <a href='https://huangyongyou.cn/en/articles/docker/intuitive-understanding-of-docker' target='_blank'>A more intuitive understanding of Docker</a> - 2024-08-05
-* <a href='https://huangyongyou.cn/en/articles/how-to-convert-a-svg-to-png-using-canvas' target='_blank'>How to convert a SVG to PNG using Canvas</a> - 2023-11-22
-* <a href='https://huangyongyou.cn/en/articles/building-your-first-api-with-expressjs-a-beginners-guide' target='_blank'>Building Your First API with Express.js: A Beginner's Guide</a> - 2023-11-02
+
 <!-- recent_articles ends -->
 
 </td>
@@ -68,11 +64,7 @@
 <h3>📦 <a href="https://huangyongyou.cn/projects" target="_blank">Recent Projects</a></h3>
 
 <!-- recent_projects starts -->
-* <a href='https://docs.qq.com/doc/DQmlrQXRNdXhGdXZk' target='_blank'>Metro CoPilot</a> - 2024-03-01
-* <a href='https://aifire.art' target='_blank'>AIFIRE.ART</a> - 2023-11-11
-* <a href='https://docs.qq.com/doc/DQnl3VUVXaW9xc3dM' target='_blank'>Waima WeChat Mini Program</a> - 2022-07-01
-* <a href='https://docs.qq.com/doc/DQmhTaUJsaXpBWEti' target='_blank'>Waima Backstage System</a> - 2022-07-01
-* <a href='https://docs.qq.com/doc/DQlhjQmFQb0dIV2JX' target='_blank'>JD Personalized Content Marketing</a> - 2021-03-01
+
 <!-- recent_projects ends -->
 
 </td>
