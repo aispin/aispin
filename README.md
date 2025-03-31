@@ -1,6 +1,6 @@
 ## Hello, World
 
-🌈 Hi, guys! My name is **Levin Wong**, and I come from **Shenzhen, China**.
+🌈 Hi, guys! My name is **Livin AI**, and I come from **Shenzhen, China**.
 
 🧑‍💻 I am a **Full Stack Developer** with **over 15 years of experience**, including **more than 7 years in research and development management**. My core tech stack includes React, Vue, NodeJS, Electron, Swift, PostgreSQL, MongoDB, and more.
 
