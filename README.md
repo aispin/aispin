@@ -29,15 +29,15 @@
 <h3>☕️ Weekly Development Breakdown</h3>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://mamboer.github.io/waka-charts/images/waka_weekly_lang_stats_black.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://mamboer.github.io/waka-charts/images/waka_weekly_lang_stats.svg">
-  <img src="https://mamboer.github.io/waka-charts/images/waka_weekly_lang_stats.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://aispin.github.io/waka-charts/images/waka_weekly_lang_stats_black.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://aispin.github.io/waka-charts/images/waka_weekly_lang_stats.svg">
+  <img src="https://aispin.github.io/waka-charts/images/waka_weekly_lang_stats.svg">
 </picture>
 
 </td>
 <td valign="top" width="50%">
 
-<h3>🌲 <a href="https://github.com/mamboer/mamboer/blob/master/releases.md" target="_blank">Product Releases</a></h3>
+<h3>🌲 <a href="https://github.com/aispin/aispin/blob/master/releases.md" target="_blank">Product Releases</a></h3>
 
 <!-- recent_releases starts -->
 * <a href='https://github.com/mamboer/waka-charts/releases/tag/v1.0.0' target='_blank'>waka-charts </a> - 2024-08-11
