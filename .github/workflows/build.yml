@@ -38,7 +38,7 @@ jobs:
       run: |-
         git diff
         git config --global user.email "mamboer@gmail.com"
-        git config --global user.name "mamboer-bot"
+        git config --global user.name "readme-bot"
         git pull
         git add -A
         git commit -m "chore: Updated content" || exit 0
