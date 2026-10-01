@@ -2,7 +2,7 @@
 
 🌈 Hi, guys! My name is **Livin AI**, and I come from **Shenzhen, China**.
 
-🧑‍💻 I am a **Full Stack Developer** with **over 15 years of experience**, including **more than 7 years in research and development management**. My core tech stack includes React, Vue, NodeJS, Electron, Swift, PostgreSQL, MongoDB, and more.
+🧑‍💻 Full Stack Developer with **15+ years of experience**—including **7+ years in R&D management** and **2 years in AI Agent/Skill development**—skilled in React, Vue, NodeJS, Electron, Swift, PostgreSQL, MongoDB, and AI Agents like Claude Code, Codex, and WorkBuddy for efficient, reliable delivery.
 
 🎸 Additionally, I am an **amateur independent musician**.
 
