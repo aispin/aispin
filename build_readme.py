@@ -136,7 +136,7 @@ def format_ai_projects(repos, zh=False):
     if not projects:
         return ""
     h1, h2, h3 = ("项目", "描述", "语言") if zh else ("Project", "Description", "Language")
-    lines = ['<table width="100%">', f'<tr><th width="25%">{h1}</th><th>{h2}</th><th width="15%">{h3}</th></tr>']
+    lines = ['<table style="width:100%">', f'<tr><th width="25%">{h1}</th><th>{h2}</th><th width="15%">{h3}</th></tr>']
     for p in projects:
         desc = (p.get("description") or "—").replace("|", "\\|").replace("\n", " ")
         lang = (p.get("primaryLanguage") or {}).get("name") or "—"
@@ -149,7 +149,7 @@ def format_music(songs, zh=False):
     if not songs:
         return ""
     h1, h2, h3 = ("#", "歌名", "专辑") if zh else ("#", "Title", "Album")
-    lines = ['<table width="100%">', f'<tr><th width="5%">{h1}</th><th width="45%">{h2}</th><th width="50%">{h3}</th></tr>']
+    lines = ['<table style="width:100%">', f'<tr><th width="5%">{h1}</th><th width="45%">{h2}</th><th width="50%">{h3}</th></tr>']
     for i, s in enumerate(songs, 1):
         lines.append(f'<tr><td>{i}</td><td><a href="https://music.163.com/song?id={s["id"]}">{s["name"]}</a></td><td>{s["album"]}</td></tr>')
     lines.append("</table>")
@@ -165,11 +165,11 @@ def format_releases(releases, limit=5):
 
 def update_readme(path, lang_md, contributions, projects_md, music_md, zh=False):
     content = path.read_text()
-    if contributions:
-        text = f"过去一年 **{contributions:,}** 次贡献" if zh else f"**{contributions:,}** contributions in the last year"
-        content = replace_chunk(content, "contributions", text, inline=True)
     if lang_md:
-        img = "![](assets/coding_activity.svg)"
+        img = '<a href="assets/coding_activity.svg" style="display:block"><img src="assets/coding_activity.svg" style="width:100%" alt="coding activity"></a>'
+        if contributions:
+            text = f"过去一年 <b>{contributions:,}</b> 次贡献" if zh else f"<b>{contributions:,}</b> contributions in the last year"
+            img += f'\n<p align="center">{text}</p>'
         content = replace_chunk(content, "coding_activity", img)
     if projects_md:
         content = replace_chunk(content, "ai_projects", projects_md)

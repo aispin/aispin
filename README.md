@@ -1,8 +1,6 @@
 # Hello, World 👋
 
-I'm **ZEO AI** ([@aispin](https://github.com/aispin)), a full stack developer from Shenzhen, China with 15+ years of experience. I also make original music as **ZEO** 🎸.
-
-中文版 → [README.zh-CN.md](README.zh-CN.md)
+I'm **ZEO AI** ([@aispin](https://github.com/aispin)), a full stack developer from Shenzhen, China with 15+ years of experience. I also make original music as **ZEO** 🎸. [中文版](README.zh-CN.md)
 
 ## 🛠 Tech Stack
 
@@ -23,7 +21,7 @@ I'm **ZEO AI** ([@aispin](https://github.com/aispin)), a full stack developer fr
 ## 🤖 AI Projects
 
 <!-- ai_projects starts -->
-<table width="100%">
+<table style="width:100%">
 <tr><th width="25%">Project</th><th>Description</th><th width="15%">Language</th></tr>
 <tr><td><a href="https://github.com/aispin/ai-matrix-team">ai-matrix-team</a></td><td>五席交付团结成的虚拟产研专家阵线，从需求、产品、设计，一路杀到研发、质检与运维，各守一关。AI Matrix Team is a virtual product-engineering task force. Requirements, product and design all the way to dev, QA and ops — each seat holds one gate. T</td><td>JavaScript</td></tr>
 <tr><td><a href="https://github.com/aispin/iskill-headroom-workbuddy2api">iskill-headroom-workbuddy2api</a></td><td>把 WorkBuddy 桌面端内置模型接成 OpenAI 兼容 API（hub 负责能用、headroom 负责耐用）；跨平台双击启动器 + 本机控制台</td><td>Python</td></tr>
@@ -35,16 +33,15 @@ I'm **ZEO AI** ([@aispin](https://github.com/aispin)), a full stack developer fr
 
 ## 📊 Coding Activity
 
-<!-- contributions starts -->**1,849** contributions in the last year<!-- contributions ends -->
-
 <!-- coding_activity starts -->
-![](assets/coding_activity.svg)
+<a href="assets/coding_activity.svg" style="display:block"><img src="assets/coding_activity.svg" style="width:100%" alt="coding activity"></a>
+<p align="center"><b>1,850</b> contributions in the last year</p>
 <!-- coding_activity ends -->
 
 ## 🎵 Latest Music (ZEO on NetEase Cloud)
 
 <!-- latest_music starts -->
-<table width="100%">
+<table style="width:100%">
 <tr><th width="5%">#</th><th width="45%">Title</th><th width="50%">Album</th></tr>
 <tr><td>1</td><td><a href="https://music.163.com/song?id=3440589170">Universe's NO.1(摇摇领先)</a></td><td>Electro Surge</td></tr>
 <tr><td>2</td><td><a href="https://music.163.com/song?id=3431310016">Cyber Speed(极品飞车版)</a></td><td>Electro Surge</td></tr>
