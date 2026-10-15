@@ -104,36 +104,26 @@ def build_language_svg(repos):
         return None
     total = sum(lang_bytes.values())
     top = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:6]
-    palette = ["#3178c6", "#f1e05a", "#e34c26", "#563d7c", "#89e051", "#3572A5"]
-    bar_w = 700
-    bar_h = 12
-    gap = 8
-    seg_widths = []
-    for i, (name, size) in enumerate(top):
-        w = round(size / total * bar_w)
-        seg_widths.append((name, w, palette[i % len(palette)], size / total * 100))
-    legend_h = len(top) * 22 + 10
-    height = bar_h + gap + legend_h + 10
+    palette = ["#58a6ff", "#f1e05a", "#e34c26", "#bc8cff", "#3fb950", "#39c5cf"]
+    W = 800
+    row_h = 34
+    pad = 20
+    height = pad * 2 + len(top) * row_h
     svg = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{bar_w}" height="{height}" viewBox="0 0 {bar_w} {height}">',
-        f'  <rect width="{bar_w}" height="{height}" rx="6" fill="transparent"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{height}" viewBox="0 0 {W} {height}">',
+        f'  <rect width="{W}" height="{height}" rx="10" fill="#0d1117"/>',
     ]
-    x = 0
-    for name, w, color, _pct in seg_widths:
-        svg.append(f'  <rect x="{x}" y="0" width="{w}" height="{bar_h}" fill="{color}"/>')
-        x += w
-    ly = bar_h + gap + 14
-    for i, (name, w, color, pct) in enumerate(seg_widths):
-        y = ly + i * 22 - 8
-        svg.append(f'  <circle cx="7" cy="{y - 4}" r="5" fill="{color}"/>')
-        svg.append(
-            f'  <text x="18" y="{y}" font-family="Segoe UI,Helvetica,Arial,sans-serif" '
-            f'font-size="12" fill="#c9d1d9">{name}</text>'
-        )
-        svg.append(
-            f'  <text x="{bar_w - 8}" y="{y}" font-family="Segoe UI,Helvetica,Arial,sans-serif" '
-            f'font-size="12" fill="#8b949e" text-anchor="end">{pct:.1f}%</text>'
-        )
+    label_w = 150
+    pct_w = 60
+    bar_w = W - pad * 2 - label_w - pct_w
+    for i, (name, size) in enumerate(top):
+        y = pad + i * row_h
+        pct = size / total * 100
+        color = palette[i % len(palette)]
+        svg.append(f'  <text x="{pad}" y="{y + 14}" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#e6edf3">{name}</text>')
+        svg.append(f'  <rect x="{pad + label_w}" y="{y + 4}" width="{bar_w}" height="10" rx="5" fill="#21262d"/>')
+        svg.append(f'  <rect x="{pad + label_w}" y="{y + 4}" width="{max(round(pct / 100 * bar_w), 4)}" height="10" rx="5" fill="{color}"/>')
+        svg.append(f'  <text x="{W - pad}" y="{y + 14}" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">{pct:.1f}%</text>')
     svg.append("</svg>")
     return "\n".join(svg)
 
@@ -146,7 +136,7 @@ def format_ai_projects(repos, zh=False):
     if not projects:
         return ""
     h1, h2, h3 = ("项目", "描述", "语言") if zh else ("Project", "Description", "Language")
-    lines = ['<table width="100%">', f"<tr><th>{h1}</th><th>{h2}</th><th>{h3}</th></tr>"]
+    lines = ['<table width="100%">', f'<tr><th width="25%">{h1}</th><th>{h2}</th><th width="15%">{h3}</th></tr>']
     for p in projects:
         desc = (p.get("description") or "—").replace("|", "\\|").replace("\n", " ")
         lang = (p.get("primaryLanguage") or {}).get("name") or "—"
@@ -159,7 +149,7 @@ def format_music(songs, zh=False):
     if not songs:
         return ""
     h1, h2, h3 = ("#", "歌名", "专辑") if zh else ("#", "Title", "Album")
-    lines = ['<table width="100%">', f"<tr><th>{h1}</th><th>{h2}</th><th>{h3}</th></tr>"]
+    lines = ['<table width="100%">', f'<tr><th width="5%">{h1}</th><th width="45%">{h2}</th><th width="50%">{h3}</th></tr>']
     for i, s in enumerate(songs, 1):
         lines.append(f'<tr><td>{i}</td><td><a href="https://music.163.com/song?id={s["id"]}">{s["name"]}</a></td><td>{s["album"]}</td></tr>')
     lines.append("</table>")
