@@ -8,7 +8,7 @@ root = pathlib.Path(__file__).parent.resolve()
 GH_TOKEN = os.environ.get("GH_TOKEN", "")
 NETEASE_ARTIST_ID = "49232788"
 PROJECT_PREFIXES = ("iskill-", "ai-")
-AI_PROJECTS_LIMIT = 20
+AI_PROJECTS_LIMIT = 5
 MUSIC_LIMIT = 10
 
 QUERY = """
@@ -94,24 +94,48 @@ def fetch_netease_songs(artist_id, limit=10):
     return songs[:limit]
 
 
-def format_language_table(repos, bar_width=25, zh=False):
+def build_language_svg(repos):
     lang_bytes = {}
     for repo in repos:
         for edge in (repo.get("languages") or {}).get("edges") or []:
             name = edge["node"]["name"]
             lang_bytes[name] = lang_bytes.get(name, 0) + edge["size"]
     if not lang_bytes:
-        return ""
+        return None
     total = sum(lang_bytes.values())
-    top = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:8]
-    h1, h2 = ("语言", "占比") if zh else ("Language", "Share")
-    lines = [f"| {h1} | {h2} |", "|----------|-------|"]
-    for name, size in top:
-        pct = size / total * 100
-        filled = round(pct / 100 * bar_width)
-        bar = "█" * filled + "░" * (bar_width - filled)
-        lines.append(f"| {name} | `{bar}` {pct:.1f}% |")
-    return "\n".join(lines)
+    top = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:6]
+    palette = ["#3178c6", "#f1e05a", "#e34c26", "#563d7c", "#89e051", "#3572A5"]
+    bar_w = 700
+    bar_h = 12
+    gap = 8
+    seg_widths = []
+    for i, (name, size) in enumerate(top):
+        w = round(size / total * bar_w)
+        seg_widths.append((name, w, palette[i % len(palette)], size / total * 100))
+    legend_h = len(top) * 22 + 10
+    height = bar_h + gap + legend_h + 10
+    svg = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{bar_w}" height="{height}" viewBox="0 0 {bar_w} {height}">',
+        f'  <rect width="{bar_w}" height="{height}" rx="6" fill="transparent"/>',
+    ]
+    x = 0
+    for name, w, color, _pct in seg_widths:
+        svg.append(f'  <rect x="{x}" y="0" width="{w}" height="{bar_h}" fill="{color}"/>')
+        x += w
+    ly = bar_h + gap + 14
+    for i, (name, w, color, pct) in enumerate(seg_widths):
+        y = ly + i * 22 - 8
+        svg.append(f'  <circle cx="7" cy="{y - 4}" r="5" fill="{color}"/>')
+        svg.append(
+            f'  <text x="18" y="{y}" font-family="Segoe UI,Helvetica,Arial,sans-serif" '
+            f'font-size="12" fill="#c9d1d9">{name}</text>'
+        )
+        svg.append(
+            f'  <text x="{bar_w - 8}" y="{y}" font-family="Segoe UI,Helvetica,Arial,sans-serif" '
+            f'font-size="12" fill="#8b949e" text-anchor="end">{pct:.1f}%</text>'
+        )
+    svg.append("</svg>")
+    return "\n".join(svg)
 
 
 def format_ai_projects(repos, zh=False):
@@ -122,11 +146,12 @@ def format_ai_projects(repos, zh=False):
     if not projects:
         return ""
     h1, h2, h3 = ("项目", "描述", "语言") if zh else ("Project", "Description", "Language")
-    lines = [f"| {h1} | {h2} | {h3} |", "|---------|-------------|----------|"]
+    lines = ['<table width="100%">', f"<tr><th>{h1}</th><th>{h2}</th><th>{h3}</th></tr>"]
     for p in projects:
         desc = (p.get("description") or "—").replace("|", "\\|").replace("\n", " ")
         lang = (p.get("primaryLanguage") or {}).get("name") or "—"
-        lines.append(f"| [{p['name']}]({p['url']}) | {desc} | {lang} |")
+        lines.append(f'<tr><td><a href="{p["url"]}">{p["name"]}</a></td><td>{desc}</td><td>{lang}</td></tr>')
+    lines.append("</table>")
     return "\n".join(lines)
 
 
@@ -134,9 +159,10 @@ def format_music(songs, zh=False):
     if not songs:
         return ""
     h1, h2, h3 = ("#", "歌名", "专辑") if zh else ("#", "Title", "Album")
-    lines = [f"| {h1} | {h2} | {h3} |", f"|---|-------|-------|"]
+    lines = ['<table width="100%">', f"<tr><th>{h1}</th><th>{h2}</th><th>{h3}</th></tr>"]
     for i, s in enumerate(songs, 1):
-        lines.append(f"| {i} | [{s['name']}](https://music.163.com/song?id={s['id']}) | {s['album']} |")
+        lines.append(f'<tr><td>{i}</td><td><a href="https://music.163.com/song?id={s["id"]}">{s["name"]}</a></td><td>{s["album"]}</td></tr>')
+    lines.append("</table>")
     return "\n".join(lines)
 
 
@@ -153,7 +179,8 @@ def update_readme(path, lang_md, contributions, projects_md, music_md, zh=False)
         text = f"过去一年 **{contributions:,}** 次贡献" if zh else f"**{contributions:,}** contributions in the last year"
         content = replace_chunk(content, "contributions", text, inline=True)
     if lang_md:
-        content = replace_chunk(content, "coding_activity", lang_md)
+        img = "![](assets/coding_activity.svg)"
+        content = replace_chunk(content, "coding_activity", img)
     if projects_md:
         content = replace_chunk(content, "ai_projects", projects_md)
     if music_md:
@@ -184,12 +211,15 @@ def main():
         print(f"NetEase fetch error: {e}")
         songs = []
 
-    lang_md = format_language_table(repos)
+    lang_svg = build_language_svg(repos)
+    if lang_svg:
+        (root / "assets" / "coding_activity.svg").parent.mkdir(exist_ok=True)
+        (root / "assets" / "coding_activity.svg").write_text(lang_svg)
     projects_md = format_ai_projects(repos)
     music_md = format_music(songs)
 
-    update_readme(root / "README.md", lang_md, total_contributions, projects_md, music_md)
-    update_readme(root / "README.zh-CN.md", lang_md, total_contributions, projects_md, music_md, zh=True)
+    update_readme(root / "README.md", lang_svg is not None, total_contributions, projects_md, music_md)
+    update_readme(root / "README.zh-CN.md", lang_svg is not None, total_contributions, projects_md, music_md, zh=True)
 
     if releases:
         update_releases(root / "releases.md", releases)
