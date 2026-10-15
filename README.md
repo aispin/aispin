@@ -2,6 +2,21 @@
 
 I'm **ZEO AI** ([@aispin](https://github.com/aispin)), a full stack developer from Shenzhen, China with 15+ years of experience. I also make original music as **ZEO** 🎸. [中文版](README.zh-CN.md)
 
+## 🎵 Latest Music (ZEO on NetEase Cloud)
+
+<!-- latest_music starts -->
+[![](https://img.shields.io/badge/1.%20Universe%27s%20NO.1%28%E6%91%87%E6%91%87%E9%A2%86%E5%85%88%29-1f6feb?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3440589170)
+[![](https://img.shields.io/badge/2.%20Cyber%20Speed%28%E6%9E%81%E5%93%81%E9%A3%9E%E8%BD%A6%E7%89%88%29-238636?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3431310016)
+[![](https://img.shields.io/badge/3.%20Skyward%20Haze%28%E7%81%B0%E7%A9%B9%E4%B9%8B%E7%83%AC%29-8957e5?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3433629221)
+[![](https://img.shields.io/badge/4.%20MotoGP%2019-bf3989?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3437272141)
+[![](https://img.shields.io/badge/5.%20Universe%27s%20NO.1%28%E6%91%87%E6%91%87%E9%A2%86%E5%85%88%29%20%E4%BC%B4%E5%A5%8F-d29922?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3440601250)
+[![](https://img.shields.io/badge/6.%20%E7%89%9B%E6%9D%A5%E7%89%9B%E6%9D%A5-1b7f8c?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3423097060)
+[![](https://img.shields.io/badge/7.%203%20AM-1f6feb?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3412114610)
+[![](https://img.shields.io/badge/8.%20Paper%20Cranes-238636?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3419854923)
+[![](https://img.shields.io/badge/9.%20Mr.Em-8957e5?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3420738322)
+[![](https://img.shields.io/badge/10.%20I%27m%20fading%20out...-bf3989?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3420883686)
+<!-- latest_music ends -->
+
 ## 🛠 Tech Stack
 
 ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white)
@@ -37,21 +52,6 @@ I'm **ZEO AI** ([@aispin](https://github.com/aispin)), a full stack developer fr
 <a href="assets/coding_activity.svg" style="display:block"><img src="assets/coding_activity.svg" style="width:100%" alt="coding activity"></a>
 <p align="center"><b>1,850</b> contributions in the last year</p>
 <!-- coding_activity ends -->
-
-## 🎵 Latest Music (ZEO on NetEase Cloud)
-
-<!-- latest_music starts -->
-[![](https://img.shields.io/badge/1.%20Universe%27s%20NO.1%28%E6%91%87%E6%91%87%E9%A2%86%E5%85%88%29-1f6feb?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3440589170)
-[![](https://img.shields.io/badge/2.%20Cyber%20Speed%28%E6%9E%81%E5%93%81%E9%A3%9E%E8%BD%A6%E7%89%88%29-238636?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3431310016)
-[![](https://img.shields.io/badge/3.%20Skyward%20Haze%28%E7%81%B0%E7%A9%B9%E4%B9%8B%E7%83%AC%29-8957e5?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3433629221)
-[![](https://img.shields.io/badge/4.%20MotoGP%2019-bf3989?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3437272141)
-[![](https://img.shields.io/badge/5.%20Universe%27s%20NO.1%28%E6%91%87%E6%91%87%E9%A2%86%E5%85%88%29%20%E4%BC%B4%E5%A5%8F-d29922?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3440601250)
-[![](https://img.shields.io/badge/6.%20%E7%89%9B%E6%9D%A5%E7%89%9B%E6%9D%A5-1b7f8c?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3423097060)
-[![](https://img.shields.io/badge/7.%203%20AM-1f6feb?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3412114610)
-[![](https://img.shields.io/badge/8.%20Paper%20Cranes-238636?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3419854923)
-[![](https://img.shields.io/badge/9.%20Mr.Em-8957e5?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3420738322)
-[![](https://img.shields.io/badge/10.%20I%27m%20fading%20out...-bf3989?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3420883686)
-<!-- latest_music ends -->
 
 ## 📦 Product Releases
 
