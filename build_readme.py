@@ -153,14 +153,8 @@ def format_music(songs, zh=False):
     lines = []
     for i, s in enumerate(songs, 1):
         title = urllib.parse.quote(f"{i}. {s['name']}", safe="")
-        album = urllib.parse.quote(f"💿 {s['album']}", safe="")
         color = colors[(i - 1) % len(colors)]
-        card = (
-            f'[![](https://img.shields.io/badge/{title}-{color}?style=flat-square&labelColor=0d1117)'
-            f'](https://music.163.com/song?id={s["id"]}) '
-            f'[![](https://img.shields.io/badge/{album}-30363d?style=flat-square&labelColor=21262d)]'
-            f'(https://music.163.com/song?id={s["id"]})'
-        )
+        card = f'[![](https://img.shields.io/badge/{title}-{color}?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id={s["id"]})'
         lines.append(card)
     return "\n".join(lines)
 
