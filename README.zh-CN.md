@@ -41,19 +41,16 @@
 ## 🎵 最新音乐（网易云 · ZEO）
 
 <!-- latest_music starts -->
-<table>
-<tr><th width="5%">#</th><th width="45%">Title</th><th width="50%">Album</th></tr>
-<tr><td width="5%">1</td><td width="45%"><a href="https://music.163.com/song?id=3440589170">Universe's NO.1(摇摇领先)</a></td><td width="50%">Electro Surge</td></tr>
-<tr><td width="5%">2</td><td width="45%"><a href="https://music.163.com/song?id=3431310016">Cyber Speed(极品飞车版)</a></td><td width="50%">Electro Surge</td></tr>
-<tr><td width="5%">3</td><td width="45%"><a href="https://music.163.com/song?id=3433629221">Skyward Haze(灰穹之烬)</a></td><td width="50%">Electro Surge</td></tr>
-<tr><td width="5%">4</td><td width="45%"><a href="https://music.163.com/song?id=3437272141">MotoGP 19</a></td><td width="50%">Electro Surge</td></tr>
-<tr><td width="5%">5</td><td width="45%"><a href="https://music.163.com/song?id=3440601250">Universe's NO.1(摇摇领先) 伴奏</a></td><td width="50%">Electro Surge</td></tr>
-<tr><td width="5%">6</td><td width="45%"><a href="https://music.163.com/song?id=3423097060">牛来牛来</a></td><td width="50%">Electro Surge</td></tr>
-<tr><td width="5%">7</td><td width="45%"><a href="https://music.163.com/song?id=3412114610">3 AM</a></td><td width="50%">ZEO</td></tr>
-<tr><td width="5%">8</td><td width="45%"><a href="https://music.163.com/song?id=3419854923">Paper Cranes</a></td><td width="50%">ZEO</td></tr>
-<tr><td width="5%">9</td><td width="45%"><a href="https://music.163.com/song?id=3420738322">Mr.Em</a></td><td width="50%">ZEO</td></tr>
-<tr><td width="5%">10</td><td width="45%"><a href="https://music.163.com/song?id=3420883686">I'm fading out...</a></td><td width="50%">ZEO</td></tr>
-</table>
+[![](https://img.shields.io/badge/1.%20Universe%27s%20NO.1%28%E6%91%87%E6%91%87%E9%A2%86%E5%85%88%29-1f6feb?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3440589170) [![](https://img.shields.io/badge/%F0%9F%92%BF%20Electro%20Surge-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3440589170)
+[![](https://img.shields.io/badge/2.%20Cyber%20Speed%28%E6%9E%81%E5%93%81%E9%A3%9E%E8%BD%A6%E7%89%88%29-238636?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3431310016) [![](https://img.shields.io/badge/%F0%9F%92%BF%20Electro%20Surge-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3431310016)
+[![](https://img.shields.io/badge/3.%20Skyward%20Haze%28%E7%81%B0%E7%A9%B9%E4%B9%8B%E7%83%AC%29-8957e5?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3433629221) [![](https://img.shields.io/badge/%F0%9F%92%BF%20Electro%20Surge-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3433629221)
+[![](https://img.shields.io/badge/4.%20MotoGP%2019-bf3989?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3437272141) [![](https://img.shields.io/badge/%F0%9F%92%BF%20Electro%20Surge-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3437272141)
+[![](https://img.shields.io/badge/5.%20Universe%27s%20NO.1%28%E6%91%87%E6%91%87%E9%A2%86%E5%85%88%29%20%E4%BC%B4%E5%A5%8F-d29922?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3440601250) [![](https://img.shields.io/badge/%F0%9F%92%BF%20Electro%20Surge-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3440601250)
+[![](https://img.shields.io/badge/6.%20%E7%89%9B%E6%9D%A5%E7%89%9B%E6%9D%A5-1b7f8c?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3423097060) [![](https://img.shields.io/badge/%F0%9F%92%BF%20Electro%20Surge-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3423097060)
+[![](https://img.shields.io/badge/7.%203%20AM-1f6feb?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3412114610) [![](https://img.shields.io/badge/%F0%9F%92%BF%20ZEO-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3412114610)
+[![](https://img.shields.io/badge/8.%20Paper%20Cranes-238636?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3419854923) [![](https://img.shields.io/badge/%F0%9F%92%BF%20ZEO-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3419854923)
+[![](https://img.shields.io/badge/9.%20Mr.Em-8957e5?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3420738322) [![](https://img.shields.io/badge/%F0%9F%92%BF%20ZEO-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3420738322)
+[![](https://img.shields.io/badge/10.%20I%27m%20fading%20out...-bf3989?style=flat-square&labelColor=0d1117)](https://music.163.com/song?id=3420883686) [![](https://img.shields.io/badge/%F0%9F%92%BF%20ZEO-30363d?style=flat-square&labelColor=21262d)](https://music.163.com/song?id=3420883686)
 <!-- latest_music ends -->
 
 ## 📦 产品发布

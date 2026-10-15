@@ -1,6 +1,7 @@
 import os
 import re
 import pathlib
+import urllib.parse
 
 import httpx
 
@@ -148,11 +149,19 @@ def format_ai_projects(repos, zh=False):
 def format_music(songs, zh=False):
     if not songs:
         return ""
-    h1, h2, h3 = ("#", "歌名", "专辑") if zh else ("#", "Title", "Album")
-    lines = ['<table>', f'<tr><th width="5%">{h1}</th><th width="45%">{h2}</th><th width="50%">{h3}</th></tr>']
+    colors = ["1f6feb", "238636", "8957e5", "bf3989", "d29922", "1b7f8c"]
+    lines = []
     for i, s in enumerate(songs, 1):
-        lines.append(f'<tr><td width="5%">{i}</td><td width="45%"><a href="https://music.163.com/song?id={s["id"]}">{s["name"]}</a></td><td width="50%">{s["album"]}</td></tr>')
-    lines.append("</table>")
+        title = urllib.parse.quote(f"{i}. {s['name']}", safe="")
+        album = urllib.parse.quote(f"💿 {s['album']}", safe="")
+        color = colors[(i - 1) % len(colors)]
+        card = (
+            f'[![](https://img.shields.io/badge/{title}-{color}?style=flat-square&labelColor=0d1117)'
+            f'](https://music.163.com/song?id={s["id"]}) '
+            f'[![](https://img.shields.io/badge/{album}-30363d?style=flat-square&labelColor=21262d)]'
+            f'(https://music.163.com/song?id={s["id"]})'
+        )
+        lines.append(card)
     return "\n".join(lines)
 
 
