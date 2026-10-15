@@ -136,7 +136,7 @@ def format_ai_projects(repos, zh=False):
     if not projects:
         return ""
     h1, h2, h3 = ("项目", "描述", "语言") if zh else ("Project", "Description", "Language")
-    lines = ['<table style="width:100%">', f'<tr><th width="25%">{h1}</th><th>{h2}</th><th width="15%">{h3}</th></tr>']
+    lines = ['<table>', f'<tr><th width="25%">{h1}</th><th>{h2}</th><th width="15%">{h3}</th></tr>']
     for p in projects:
         desc = (p.get("description") or "—").replace("|", "\\|").replace("\n", " ")
         lang = (p.get("primaryLanguage") or {}).get("name") or "—"
@@ -149,7 +149,7 @@ def format_music(songs, zh=False):
     if not songs:
         return ""
     h1, h2, h3 = ("#", "歌名", "专辑") if zh else ("#", "Title", "Album")
-    lines = ['<table style="width:100%">', f'<tr><th width="5%">{h1}</th><th width="45%">{h2}</th><th width="50%">{h3}</th></tr>']
+    lines = ['<table>', f'<tr><th width="5%">{h1}</th><th width="45%">{h2}</th><th width="50%">{h3}</th></tr>']
     for i, s in enumerate(songs, 1):
         lines.append(f'<tr><td width="5%">{i}</td><td width="45%"><a href="https://music.163.com/song?id={s["id"]}">{s["name"]}</a></td><td width="50%">{s["album"]}</td></tr>')
     lines.append("</table>")
