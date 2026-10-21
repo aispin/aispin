@@ -38,8 +38,8 @@
 <!-- ai_projects starts -->
 <table>
 <tr><th width="25%">Project</th><th>Description</th><th width="15%">Language</th></tr>
-<tr><td width="25%"><a href="https://github.com/aispin/iskill-headroom-workbuddy2api">iskill-headroom-workbuddy2api</a></td><td>把 WorkBuddy 桌面端内置模型接成 OpenAI 兼容 API（hub 负责能用、headroom 负责耐用）；跨平台双击启动器 + 本机控制台</td><td width="15%">Python</td></tr>
 <tr><td width="25%"><a href="https://github.com/aispin/ai-matrix-team">ai-matrix-team</a></td><td>五席交付团结成的虚拟产研专家阵线，从需求、产品、设计，一路杀到研发、质检与运维，各守一关。AI Matrix Team is a virtual product-engineering task force. Requirements, product and design all the way to dev, QA and ops — each seat holds one gate. T</td><td width="15%">JavaScript</td></tr>
+<tr><td width="25%"><a href="https://github.com/aispin/iskill-headroom-workbuddy2api">iskill-headroom-workbuddy2api</a></td><td>把 WorkBuddy 桌面端内置模型接成 OpenAI 兼容 API（hub 负责能用、headroom 负责耐用）；跨平台双击启动器 + 本机控制台</td><td width="15%">Python</td></tr>
 <tr><td width="25%"><a href="https://github.com/aispin/iskill-generate-sponsors">iskill-generate-sponsors</a></td><td>收款码 → 一整套可直接用的赞助页：FUNDING.yml + Markdown 区块 + 响应式双语 html + 零依赖 React/Vue 组件。One QR image → a full sponsor kit.</td><td width="15%">JavaScript</td></tr>
 <tr><td width="25%"><a href="https://github.com/aispin/iskill-workbuddy-deepseek">iskill-workbuddy-deepseek</a></td><td>在 WorkBuddy 内置浏览器里用免费的 DeepSeek 网页版做讨论，一句话把对话交给 agent 执行 —— 不用外部 Chrome，不用切应用。</td><td width="15%">JavaScript</td></tr>
 <tr><td width="25%"><a href="https://github.com/aispin/iskill-viral-teardown">iskill-viral-teardown</a></td><td>爆款短视频拆解——下载转写+五维拆解（爆款短视频工作流 2/6）</td><td width="15%">JavaScript</td></tr>
@@ -50,7 +50,7 @@
 
 <!-- coding_activity starts -->
 <a href="assets/coding_activity.svg" style="display:block"><img src="assets/coding_activity.svg" style="width:100%" alt="coding activity"></a>
-<p align="center">过去一年 <b>1,849</b> 次贡献</p>
+<p align="center">过去一年 <b>1,869</b> 次贡献</p>
 <!-- coding_activity ends -->
 
 ## 📦 产品发布
