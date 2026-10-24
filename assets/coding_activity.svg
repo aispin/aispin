@@ -2,16 +2,16 @@
   <rect width="800" height="244" rx="10" fill="#0d1117"/>
   <text x="20" y="34" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#e6edf3">JavaScript</text>
   <rect x="170" y="24" width="550" height="10" rx="5" fill="#21262d"/>
-  <rect x="170" y="24" width="229" height="10" rx="5" fill="#58a6ff"/>
-  <text x="780" y="34" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">41.6%</text>
+  <rect x="170" y="24" width="230" height="10" rx="5" fill="#58a6ff"/>
+  <text x="780" y="34" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">41.7%</text>
   <text x="20" y="68" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#e6edf3">Java</text>
   <rect x="170" y="58" width="550" height="10" rx="5" fill="#21262d"/>
   <rect x="170" y="58" width="114" height="10" rx="5" fill="#f1e05a"/>
-  <text x="780" y="68" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">20.8%</text>
+  <text x="780" y="68" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">20.7%</text>
   <text x="20" y="102" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#e6edf3">CSS</text>
   <rect x="170" y="92" width="550" height="10" rx="5" fill="#21262d"/>
   <rect x="170" y="92" width="87" height="10" rx="5" fill="#e34c26"/>
-  <text x="780" y="102" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">15.9%</text>
+  <text x="780" y="102" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">15.8%</text>
   <text x="20" y="136" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#e6edf3">HTML</text>
   <rect x="170" y="126" width="550" height="10" rx="5" fill="#21262d"/>
   <rect x="170" y="126" width="66" height="10" rx="5" fill="#bc8cff"/>
