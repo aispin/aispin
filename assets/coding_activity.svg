@@ -14,7 +14,7 @@
   <text x="780" y="102" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">15.7%</text>
   <text x="20" y="136" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#e6edf3">HTML</text>
   <rect x="170" y="126" width="550" height="10" rx="5" fill="#21262d"/>
-  <rect x="170" y="126" width="66" height="10" rx="5" fill="#bc8cff"/>
+  <rect x="170" y="126" width="65" height="10" rx="5" fill="#bc8cff"/>
   <text x="780" y="136" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e" text-anchor="end">11.9%</text>
   <text x="20" y="170" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#e6edf3">TypeScript</text>
   <rect x="170" y="160" width="550" height="10" rx="5" fill="#21262d"/>
