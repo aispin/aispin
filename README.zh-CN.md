@@ -50,7 +50,7 @@
 
 <!-- coding_activity starts -->
 <a href="assets/coding_activity.svg" style="display:block"><img src="assets/coding_activity.svg" style="width:100%" alt="coding activity"></a>
-<p align="center">过去一年 <b>1,877</b> 次贡献</p>
+<p align="center">过去一年 <b>1,878</b> 次贡献</p>
 <!-- coding_activity ends -->
 
 ## 📦 产品发布
